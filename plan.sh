@@ -1,0 +1,15 @@
+pkg_name=luarocks
+pkg_origin=qbr
+pkg_version="2.4.4"
+pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
+pkg_license=("MIT")
+pkg_source="http://luarocks.github.io/luarocks/releases/${pkg_name}-${pkg_version}.tar.gz"
+pkg_shasum=3938df33de33752ff2c526e604410af3dceb4b7ff06a770bc4a240de80a1f934
+pkg_deps=(qbr/luajit)
+pkg_build_deps=(core/make core/gcc)
+pkg_lib_dirs=(lib)
+pkg_include_dirs=(include)
+pkg_bin_dirs=(bin)
+pkg_pconfig_dirs=(lib/pconfig)
+pkg_description="LuaRocks package manager"
+pkg_upstream_url="https://luarocks.org/"
